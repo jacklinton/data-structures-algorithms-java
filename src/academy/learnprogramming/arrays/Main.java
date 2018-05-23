@@ -13,14 +13,34 @@ public class Main {
         intArray[5] = 1;
         intArray[6] = -22;
 
+        int index = -1;
         for (int i = 0; i < intArray.length; i++) {
-            System.out.println(intArray[i]);
+            if (intArray[i]  == 7) {
+                index = i;
+                break;
+            }
         }
-        /* To retrieve an element from an array...
+
+        System.out.println("index = " + index);
+
+        /*
+        To retrieve an element from an array...
         1. Multiply the size of the element by its index
         2. get the start address of the array
         3. Add the start adress to the result of the multiplication
         x + i * y
+         */
+
+        /*
+        O(1) Retrieving an element from an array, if you have the index, has a constant time complexity.
+        O(n) If we don't know the index, the time complexity is linear.
+        Add an element to a full array O(n)
+        Add an element to the end of an array (has space) O(1)
+        Insert or update an element at a specific index O(1)
+        Delete an element by setting it to null O(1)
+        Delete an element by shifting elements O(n)
+
+        If the code requires a loop, it's going to be linear time, if it doesn't require a loop, it's constant.
          */
     }
 }
