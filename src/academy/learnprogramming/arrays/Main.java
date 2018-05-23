@@ -16,5 +16,11 @@ public class Main {
         for (int i = 0; i < intArray.length; i++) {
             System.out.println(intArray[i]);
         }
+        /* To retrieve an element from an array...
+        1. Multiply the size of the element by its index
+        2. get the start address of the array
+        3. Add the start adress to the result of the multiplication
+        x + i * y
+         */
     }
 }
